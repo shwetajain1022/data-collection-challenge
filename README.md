@@ -8,7 +8,6 @@
 ## Deliverable 1: Scrape titles and preview text from Mars news articles.
 --------------------------------------------------------------------------------------------
 The work is stored in Jupyter Notebook file part_1_mars_news.ipynb. Following are the steps below to scrape the Mars News website.
-
 1. Use automated browsing to visit the Mars news siteLinks to an external site. Inspected the page to identify which elements to scrape.
 1. Extracted the titles and preview text of the news articles from <th> and <tr> tags inside the <table> tag scraped. 
 1. Stored the scraping results by looping through all the rows in the table in Python data structures as follows:
@@ -17,9 +16,8 @@ The work is stored in Jupyter Notebook file part_1_mars_news.ipynb. Following ar
 1. Printed the list in part_1_mars_news.ipynb.
 1. Stored the scraped list of dictionary in a file using JSON dumps.
 
-## Deliverable 2: Scrape and analyse Mars weather data, which exists in a table.
+## Deliverable 2: Scrape and Analyse Mars Weather Data
 --------------------------------------------------------------------------------------------
-Part 2: Scrape and Analyse Mars Weather Data
 All the coding was done in  Jupyter Notebook part_2_mars_weather.ipynb. Following are the steps below to scrape and analyse Mars weather data:
 1. Use automated browsing to visit the Mars Temperature Data SiteLinks to an external - https://static.bc-edx.com/data/web/mars_facts/temperature.html. Inspected the page to identify which elements to scrape. 
 1. Created a Beautiful Soup object and used it to scrape the data in the HTML table. 
