@@ -8,7 +8,6 @@
 ## Deliverable 1: Scrape titles and preview text from Mars news articles.
 --------------------------------------------------------------------------------------------
 The work is stored in Jupyter Notebook file part_1_mars_news.ipynb. Following are the steps below to scrape the Mars News website.
-
 1. Use automated browsing to visit the Mars news siteLinks to an external site. Inspected the page to identify which elements to scrape.
 1. Extracted the titles and preview text of the news articles from <th> and <tr> tags inside the <table> tag scraped. 
 1. Stored the scraping results by looping through all the rows in the table in Python data structures as follows:
@@ -17,13 +16,12 @@ The work is stored in Jupyter Notebook file part_1_mars_news.ipynb. Following ar
 1. Printed the list in part_1_mars_news.ipynb.
 1. Stored the scraped list of dictionary in a file using JSON dumps.
 
-## Deliverable 2: Scrape and analyse Mars weather data, which exists in a table.
+## Deliverable 2: Scrape and Analyse Mars Weather Data
 --------------------------------------------------------------------------------------------
-Part 2: Scrape and Analyse Mars Weather Data
 All the coding was done in  Jupyter Notebook part_2_mars_weather.ipynb. Following are the steps below to scrape and analyse Mars weather data:
 1. Use automated browsing to visit the Mars Temperature Data SiteLinks to an external - https://static.bc-edx.com/data/web/mars_facts/temperature.html. Inspected the page to identify which elements to scrape. 
-1. Created a Beautiful Soup object and used it to scrape the data in the HTML table. 
-1. Assembled the scraped data inside the table tag into a Pandas DataFrame. The column headings for the table are as follows:
+2. Created a Beautiful Soup object and used it to scrape the data in the HTML table. 
+3. Assembled the scraped data inside the table tag into a Pandas DataFrame. The column headings for the table are as follows:
  - id: the identification number of a single transmission from the Curiosity rover
  - terrestrial_date: the date on Earth
  - sol: the number of elapsed sols (Martian days) since Curiosity landed on Mars
@@ -31,9 +29,7 @@ All the coding was done in  Jupyter Notebook part_2_mars_weather.ipynb. Followin
  - month: the Martian month
  - min_temp: the minimum temperature, in Celsius, of a single Martian day (sol)
  - pressure: The atmospheric pressure at Curiosity's location
-
-1. Converted the column values to the most relevant data type by cast (or convert) the data to the appropriate datetime, int, or float data types.
-      
+4. Converted the column values to the most relevant data type by cast (or convert) the data to the appropriate datetime, int, or float data types.
  - id : int32 data type         
  - terrestrial_date : datetime64[ns]
  - sol : int32 data type          
@@ -41,7 +37,7 @@ All the coding was done in  Jupyter Notebook part_2_mars_weather.ipynb. Followin
  - month : int32   data type        
  - min_temp : float64  data type       
  - pressure : float64  data type       
-1. Answered the following questions based on the groupby in the dataframes and plotting the relevant graphs to get the answers:
+5. Answered the following questions based on the groupby in the dataframes and plotting the relevant graphs to get the answers:
  - How many months exist on Mars? Used unique() method to get the answer that 12 months are in Mars 
  - How many Martian (and not Earth) days worth of data exist in the scraped dataset? counted the number of rows of Sol column 
  - What are the coldest and the warmest months on Mars (at the location of Curiosity)? To answer this question:
