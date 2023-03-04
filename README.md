@@ -29,9 +29,7 @@ All the coding was done in  Jupyter Notebook part_2_mars_weather.ipynb. Followin
  - month: the Martian month
  - min_temp: the minimum temperature, in Celsius, of a single Martian day (sol)
  - pressure: The atmospheric pressure at Curiosity's location
-
 1. Converted the column values to the most relevant data type by cast (or convert) the data to the appropriate datetime, int, or float data types.
-      
  - id : int32 data type         
  - terrestrial_date : datetime64[ns]
  - sol : int32 data type          
